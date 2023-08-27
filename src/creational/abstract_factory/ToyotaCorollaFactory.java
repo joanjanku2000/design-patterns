@@ -15,4 +15,9 @@ public class ToyotaCorollaFactory implements  CarFactory{
     public Car createHatchback() {
         return new ToyotaCorrollaHatchback();
     }
+
+    @Override
+    public Car createSuv() {
+        return null;
+    }
 }

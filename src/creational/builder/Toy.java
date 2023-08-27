@@ -5,7 +5,7 @@ public class Toy {
     private String type;
     private String madeOf;
 
-    Toy(final String name, final String type, final String madeOf) {
+    Toy(String name,String type, String madeOf) {
         this.name = name;
         this.type = type;
         this.madeOf = madeOf;
@@ -33,5 +33,14 @@ public class Toy {
 
     public void setMadeOf(final String madeOf) {
         this.madeOf = madeOf;
+    }
+
+    @Override
+    public String toString() {
+        return "Toy{" +
+                "name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", madeOf='" + madeOf + '\'' +
+                '}';
     }
 }

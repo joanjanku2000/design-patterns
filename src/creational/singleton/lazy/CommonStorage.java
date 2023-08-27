@@ -15,7 +15,7 @@ public class CommonStorage {
 
     private List<Integer> values = new ArrayList<>();
 
-    private CommonStorage() {
+    public CommonStorage() {
     }
 
     public void addValue(final int value) {

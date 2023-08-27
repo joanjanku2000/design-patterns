@@ -24,7 +24,7 @@ public class BoardGame implements Game {
 
     @Override
     public int getMinNumberOfPlayers() {
-        return 2;
+        return 3;
     }
 
     @Override

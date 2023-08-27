@@ -6,7 +6,6 @@ import java.util.Random;
 import java.util.UUID;
 
 public class FlyweightUsage {
-
     private static final int ITERATIONS = 1000;
     private static final int AVAILABLE_CAR_TYPES = 4;
     private static final List<String> VERSIONS = List.of("BASIC", "PREMIUM", "COMFORT");
@@ -35,7 +34,7 @@ public class FlyweightUsage {
         }
 
         System.out.println("I created " + producedCars.size() + " cars, but only " + Engine.instances + " references to Engine object");
-        // it will print: 'I created 1000 cars, but only 4 references to Engine object'
+
     }
 
     private static String getVersion() {

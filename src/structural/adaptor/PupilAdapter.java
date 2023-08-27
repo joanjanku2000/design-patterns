@@ -6,7 +6,7 @@ public class PupilAdapter implements Student {
 
     private final Pupil pupil;
 
-    public PupilAdapter(final Pupil pupil) {
+    public PupilAdapter(Pupil pupil) {
         this.pupil = pupil;
     }
 

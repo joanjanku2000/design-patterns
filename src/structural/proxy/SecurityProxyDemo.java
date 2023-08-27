@@ -7,7 +7,7 @@ public class SecurityProxyDemo {
         String userName = "Andrzej";
         String channelName = "design_patterns";
         String message = "I will learn what proxy is!";
-        sessionTokens.createTokenForUser(userName);
+        sessionTokens.createTokenForUser(userName); // supozojme useri beni login
 
         MessageSender realMessageSender = new SlackMessageSender();
         MessageSender proxy = new SlackMessageSenderProxy(realMessageSender, sessionTokens, tokenValidator);

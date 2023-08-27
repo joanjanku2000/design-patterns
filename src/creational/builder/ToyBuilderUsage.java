@@ -7,5 +7,7 @@ public class ToyBuilderUsage {
                 .withName("Matchbox car")
                 .withType("Small car")
                 .build();
+        System.out.println("Toy = " + toy);
+
     }
 }
