@@ -1,7 +1,7 @@
 package creational.factory.coffe;
 
 
-public class Machiatto implements Coffe {
+public class Machiatto extends Coffe {
     private String name;
 
     public Machiatto(String name) {

@@ -1,6 +1,10 @@
 package creational.factory.coffe;
 
-public interface Coffe {
-     String getName();
+public abstract class Coffe {
+     abstract String getName();
+
+     public String toString(){
+          return "Coffe [ " + getName() + "]";
+     }
 
 }
