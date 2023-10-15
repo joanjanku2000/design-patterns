@@ -5,17 +5,17 @@ public class ToyBuilder {
     private String type;
     private String madeOf;
 
-    public ToyBuilder withName(final String name) {
+    public ToyBuilder name(final String name) {
         this.name = name;
         return this;
     }
 
-    public ToyBuilder withType(final String type) {
+    public ToyBuilder type(final String type) {
         this.type = type;
         return this;
     }
 
-    public ToyBuilder withMadeOf(final String madeOf) {
+    public ToyBuilder madeOf(final String madeOf) {
         this.madeOf = madeOf;
         return this;
     }

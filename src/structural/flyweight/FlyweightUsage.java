@@ -40,4 +40,13 @@ public class FlyweightUsage {
     private static String getVersion() {
         return VERSIONS.get(new Random().nextInt(VERSIONS.size()));
     }
+
+    public Car createCar() {
+        Engine tdi = new Engine("123", 1896.0, EngineType.DIESEL); //1111
+
+        Car golf = new Car("VW", "VW", "4", "hatchback", tdi);
+        Car passat = new Car("VW", "VW", "6", "sedan", tdi);
+
+        return golf;
+    }
 }
