@@ -3,7 +3,7 @@ package behavioral.visitor;
 public class VisitorUsage {
 
   public static void main(String[] args) {
-    final Visitor visitor = new HTMLFileValidator();
+     Visitor visitor = new HTMLFileValidator();
 
     final HTML4File html4File = new HTML4File("<head>\n" +
         "    <title>Title</title>\n" +

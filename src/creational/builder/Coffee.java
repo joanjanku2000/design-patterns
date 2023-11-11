@@ -1,6 +1,6 @@
 package creational.builder;
 
-public class Coffee {
+public class Coffee implements Cloneable {
     private String type;
     private int sugars;
     private boolean milk;
@@ -32,6 +32,16 @@ public class Coffee {
     public static CoffeBuilder getBuilder(){
         return new CoffeBuilder();
     }
+
+    @Override
+    public Coffee clone() {
+        try {
+            return (Coffee) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
+
     public static class CoffeBuilder {
         private String type;
         private int sugars;

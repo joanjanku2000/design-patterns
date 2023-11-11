@@ -9,6 +9,11 @@ public class EngineBuilderUsage {
                         .model("TDI")
                         .yearOfProduction(2008)
                         .build();
+
+        Engine engine1
+                = new Engine("1.9TDI"
+                ,105,"TDI",2008);
+
         System.out.println(engine);
 
     }

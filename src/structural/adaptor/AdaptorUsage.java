@@ -13,8 +13,8 @@ import java.util.List;
 public class AdaptorUsage {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
-        PupilAdapter pupilAdapter = new PupilAdapter(new Pupil("Joan", "Janku", "jjanku@gmail.com", 19, List.of(3, 4, 5)));
-        students.add(pupilAdapter);
+        StudentAdapter studentAdapter = new StudentAdapter(new Pupil("Joan", "Janku", "jjanku@gmail.com", 19, List.of(3, 4, 5)));
+        students.add(studentAdapter);
 
         for (final var student : students) {
             System.out.println(student.getFullName()); // Joan Janku

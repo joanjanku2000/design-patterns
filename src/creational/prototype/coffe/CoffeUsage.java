@@ -6,5 +6,7 @@ public class CoffeUsage {
         Coffe coffe = coffeStore.getCoffe("Espresso",2,"Name test");
         System.out.println(coffe);
 
+        Integer e = Integer.valueOf("3");
+
     }
 }

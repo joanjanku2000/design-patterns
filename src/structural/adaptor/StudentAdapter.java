@@ -2,11 +2,11 @@ package structural.adaptor;
 
 import java.util.Collection;
 
-public class PupilAdapter implements Student {
+public class StudentAdapter implements Student {
 
     private final Pupil pupil;
 
-    public PupilAdapter(Pupil pupil) {
+    public StudentAdapter(Pupil pupil) {
         this.pupil = pupil;
     }
 

@@ -13,17 +13,17 @@ public class TMaxEngine implements Engine {
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public Integer getYear() {
-        return null;
+        return year;
     }
 
     @Override
     public Integer getHp() {
-        return null;
+        return hp;
     }
 
     @Override
