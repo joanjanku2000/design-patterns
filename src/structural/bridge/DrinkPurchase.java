@@ -1,5 +1,9 @@
 package structural.bridge;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public interface DrinkPurchase {
-    Drink buy(final Double cost);
+    List<Integer> purchases = new ArrayList<>();
+    Drink buy(Double cost);
 }
