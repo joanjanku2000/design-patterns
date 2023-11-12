@@ -22,11 +22,15 @@ public class RandomListSortingPerformanceTest extends PerformanceTestTemplate {
   @Override
   protected void iteration() {
     final List<Integer> integers = new ArrayList<>();
+    generateRandomNumbers(integers);
+
+    Collections.sort(integers);
+  }
+
+  private static void generateRandomNumbers(List<Integer> integers) {
     final Random random = new Random();
     for (int idx = 0; idx < NUMBERS_NUM; idx++) {
       integers.add(random.nextInt());
     }
-
-    Collections.sort(integers);
   }
 }

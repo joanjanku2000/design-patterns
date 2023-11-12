@@ -1,6 +1,6 @@
 package behavioral.template_method.example;
 
-public interface Template {
+public interface Bmi {
 
     Integer getWeight();
     Integer getHeight();

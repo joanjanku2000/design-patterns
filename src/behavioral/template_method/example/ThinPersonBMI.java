@@ -1,6 +1,6 @@
 package behavioral.template_method.example;
 
-public class ThinPersonBMI implements Template {
+public class ThinPersonBMI implements Bmi {
     @Override
     public Integer getWeight() {
         return 50;
