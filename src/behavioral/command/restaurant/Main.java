@@ -11,7 +11,7 @@ public class Main {
         Order o = new Order(
                 Arrays.asList("Pizza","Byrek","Soup","Salad")
         );
-        Command command = new PlaceOrderCommand(o);
+        Command command = new DeliverOrder(o);
         command.apply();
 
         Command deliverOrder = new DeliverOrder(o);
