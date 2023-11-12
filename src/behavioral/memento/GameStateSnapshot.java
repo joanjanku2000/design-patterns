@@ -3,7 +3,7 @@ package behavioral.memento;
 import java.util.List;
 
 
-public class GameStateSnapshot {
+public final class GameStateSnapshot {
 
   private Integer health;
   private Integer mana;
