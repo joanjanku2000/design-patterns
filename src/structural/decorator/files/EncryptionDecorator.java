@@ -7,8 +7,8 @@ public class EncryptionDecorator extends DataSourceDecorator {
     @Override
     public void writeData(String data) {
         System.out.println("Encrypting data " +
-                data + " before writing to "
-                + super.wrappee);
+                data + " before writing ");
+        super.wrappee.writeData(data);
     }
 
     @Override

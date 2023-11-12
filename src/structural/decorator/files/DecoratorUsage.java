@@ -4,11 +4,9 @@ public class DecoratorUsage {
 
     public static void main(String[] args) {
         DataSource dataSource = new FileDataSource("C://joan//user.sql");
-//        DataSource encryptionDecorator
-//                = new EncryptionDecorator(dataSource);
-//        encryptionDecorator.writeData("test");
-
-        DataSource compressionDecorator = new CompressionDecorator(dataSource);
+        DataSource compressionDecorator = new CompressionDecorator(
+                new EncryptionDecorator(dataSource)
+        );
         compressionDecorator.writeData("test");
     }
 }
